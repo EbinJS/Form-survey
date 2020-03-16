@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SURVEY PAGE</title>
+        <link rel="stylesheet" href="./surstyle.css">
+    </head>
+    <body>
+        <div class="layer">
+        <h1 style="text-align: center;">Personal Survey Form</h1>
+        <form id="form">
+            <div class="box">
+                <p id="name">Name:</p>
+                <input type="text" id="inp" placeholder="Enter your name" required>
+                <p id="email">Email:</p>
+                <input type="email" id="inp" placeholder="Enter valid mail id" required>
+                <p id="age">Age:</p>
+                <input type="number" id="inp" placeholder="Enter age" min="15" max="90" required>
+                <p id="mob">Mobile:</p>
+                <input type="tel" id="inp" placeholder="Enter mobile no." minlength="10" maxlength="10" required>
+                <p id="occupation">Occupation:</p>
+                <select id="inp1" required>
+                    <option disabled selected value>Select an option</option>
+                    <option id="soft">Software Engineer</option>
+                    <option id="accountant">Accountant</option>
+                    <option id="student">Student</option>
+                    <option id="other">Others</option>
+                </select>
+                <p>How would you describe yourself among friends ?</p>
+                <label><input type="checkbox" id="inp2" value="Friendly">Friendly</label>
+                <label><input type="checkbox" id="inp2" value="Serious">Serious</label>
+                <label><input type="checkbox" id="inp2" value="Funny">Funny</label>
+                <label><input type="checkbox" id="inp2" value="Cruel">Cruel</label>
+                <p>When you are in trouble, who would you call for help ?</p>
+                <label><input type="radio" id="inp2" name="who" value="fam">Family</label>
+                <label><input type="radio" id="inp2" name="who" value="frnd">Friends</label>
+                <label><input type="radio" id="inp2" name="who" value="god">God</label>
+                <p id="comments">Comments:</p>
+                <textarea placeholder="Enter your thoughts here..."></textarea>
+                <input type="submit" id="button" name="SUBMIT">
+            </div>
+        </div>
+        </form>
+    </body>
+</html>
